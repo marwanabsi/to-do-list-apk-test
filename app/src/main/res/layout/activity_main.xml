@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Do App"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_enter_task_topic"
+        style="@style/lebel_input" />
+    <EditText
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="250dp"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/lebel_input"
+        android:text="please Choose task type"
+        />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner"
+        android:id="@+id/toDoSpinner"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15dp"
+
+        >
+
+    </Spinner>
+
+    <RadioGroup
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15dp"
+
+        >
+        <RadioButton
+            android:id="@+id/easy_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="easy"/>
+
+        <RadioButton
+            android:id="@+id/hard_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hard"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show what i add"
+        android:layout_gravity="center"
+        android:onClick="showData"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

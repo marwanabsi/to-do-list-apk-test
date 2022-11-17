@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="lebel_input">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingVertical">20dp</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>

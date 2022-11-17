@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">to-do-list-apk-test</string>
+    <string name="please_enter_task_topic">Please enter task topic</string>
+
+    <string-array name="spinner">
+        <item>Work </item>
+        <item>Study </item>
+        <item>Life Style</item>
+        <item>Eat </item>
+
+    </string-array>
+</resources>
